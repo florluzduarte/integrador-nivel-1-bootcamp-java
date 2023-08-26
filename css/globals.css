@@ -2,6 +2,7 @@
   --primary-color: #71bf44;
   --secondary-color: #0f75bc;
   --terciary-color: #1e1e1e;
+  --footer-bkg-color: #eff0f1;
 }
 
 .button-gc-primary {
@@ -26,6 +27,18 @@
 
 .p-special {
   font-size: 1.125rem !important;
+}
+
+.footer-gc {
+  background-color: var(--footer-bkg-color);
+}
+
+.footer-gc h2 {
+  color: var(--primary-color) !important;
+}
+
+.footer-gc-credits {
+  font-size: 0.875rem !important;
 }
 
 @media screen and (min-width: 768px) {
