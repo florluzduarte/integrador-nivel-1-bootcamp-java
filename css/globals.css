@@ -25,12 +25,16 @@
 }
 
 .p-special {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 }
 
 @media screen and (min-width: 768px) {
   .header-gc-wrapper {
     max-width: 60% !important;
+  }
+
+  .p-special {
+    font-size: 1.25rem !important;
   }
 }
 
@@ -46,5 +50,9 @@
   .detail-gc {
     width: 6rem;
     height: 6rem;
+  }
+
+  .p-special {
+    font-size: 1.5rem !important;
   }
 }
