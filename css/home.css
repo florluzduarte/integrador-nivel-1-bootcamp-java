@@ -1,7 +1,7 @@
 .header-gc-image {
   width: 100%;
   height: 18rem;
-  background-image: url("/assets/home-hero-img-sm.png");
+  background-image: url("./assets/home-hero-img-sm.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 768px) {
   .header-gc-image {
-    background-image: url("/assets/home-hero-img-md.png");
+    background-image: url("./assets/home-hero-img-md.png");
     height: 25rem;
   }
 
@@ -25,7 +25,7 @@
 
 @media screen and (min-width: 992px) {
   .header-gc-image {
-    background-image: url("/assets/home-hero-img-lg.png");
+    background-image: url("./assets/home-hero-img-lg.png");
     height: 30rem;
   }
 
