@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto GC | Organización social</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/inscripciones.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg m-2">
+      <div class="container-xxl">
+        <!-- Navbar Logo -->
+
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="../assets/logo-gc.png"
+            alt="Logo Proyecto GC"
+            width="48"
+            height="48"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Items -->
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="../index.html">Inicio</a>
+            <a class="nav-link" href="../html/somos.html">Somos</a>
+            <a class="nav-link" href="../html/proyecto.html">Proyecto</a>
+            <a class="nav-link" href="../html/actividades.html">Actividades</a>
+
+            <!-- Navbar Social Media Buttons -->
+
+            <div class="d-inline-flex pt-2 pb-3 py-md-2 ms-lg-3">
+              <a href="https://www.instagram.com/proyecto.gc/" target="_blank">
+                <img
+                  src="../assets/instagram-logo.png"
+                  alt="Instagram"
+                  width="24"
+                  height="24"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/proyectogc.ong/"
+                class="ps-2"
+                target="_blank"
+              >
+                <img
+                  src="../assets/facebook-logo.png"
+                  alt="Facebook"
+                  width="24"
+                  height="24"
+                />
+              </a>
+            </div>
+
+            <!-- Navbar Action Buttons -->
+
+            <div class="my-3 d-flex flex-column flex-md-row d-lg-none">
+              <a
+                href="../html/colaborar.html"
+                class="btn btn-primary button-gc-primary"
+                >Colaborar</a
+              >
+              <a
+                href="../html/inscripciones.html"
+                class="btn btn-primary button-gc-secondary mt-2 mt-md-0 ms-md-2 active fw-bold"
+                aria-current="page"
+                >Inscripciones</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-lg-flex flex-lg-row">
+          <a
+            href="../html/colaborar.html"
+            class="btn btn-primary button-gc-primary"
+            >Colaborar</a
+          >
+          <a
+            href="../html/inscripciones.html"
+            class="btn btn-primary button-gc-secondary mt-2 mt-md-0 ms-md-2 active fw-bold"
+            aria-current="page"
+            >Inscripciones</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+
+      <header
+        class="container d-flex flex-column align-items-center my-4 my-md-5"
+      >
+        <div
+          class="d-flex justify-content-center align-items-center header-gc-wrapper"
+        >
+          <img
+            src="../assets/detail-left-gc.png"
+            alt=""
+            class="me-2 me-md-4 detail-gc"
+          />
+          <h1 class="text-center fw-bold">Inscripciones</h1>
+          <img
+            src="../assets/detail-right-gc.png"
+            alt=""
+            class="ms-2 ms-md-4 detail-gc"
+          />
+        </div>
+      </header>
+
+      <!-- Form Section -->
+
+      <section class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-lg-5 my-3 my-md-0 my-lg-5">
+            <div class="d-flex flex-column">
+              <img
+                src="../assets/inscripciones-img.jpg"
+                alt="Niña jugando"
+                class="img-fluid rounded-4 mb-3"
+              />
+              <h2 class="fw-bold h3">Requisitos de inscripción</h2>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>Tener de 5 a 11 años</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Contar con el acompañamiento familiar durante el ciclo
+                      lectivo
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <form action="" class="col-12 col-md-6 col-lg-6 ms-lg-5 my-lg-5">
+            <p>
+              <strong
+                >Para comenzar con el proceso de inscripción deberán completar
+                el siguiente formulario:</strong
+              >
+            </p>
+            <div class="mb-3">
+              <label for="parent-name" class="form-label"
+                >Nombre y apellido del Padre, Madre o Tutor
+                <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-gc"
+                id="parent-name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="student-name" class="form-label"
+                >Nombre y apellido del alumno/a
+                <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control form-gc"
+                id="student-name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label"
+                >Email de contacto <span class="text-danger">*</span></label
+              >
+              <input
+                type="email"
+                class="form-control form-gc"
+                id="email"
+                placeholder="email@gmail.com"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label"
+                >Teléfono de contacto <span class="text-danger">*</span></label
+              >
+              <input
+                type="number"
+                class="form-control form-gc"
+                id="phone"
+                placeholder="1122223333"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="classes" class="form-label"
+                >Turno (Mañana o Tarde)
+                <span class="text-danger">*</span></label
+              >
+              <input
+                class="form-control form-gc"
+                list="datalistOptions"
+                id="classes"
+                placeholder="Elige el turno seleccionado"
+              />
+              <datalist id="datalistOptions">
+                <option value="Mañana"></option>
+                <option value="Tarde"></option>
+              </datalist>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Mensaje</label>
+              <textarea
+                class="form-control form-gc"
+                id="message"
+                rows="3"
+              ></textarea>
+            </div>
+            <button
+              class="mb-3 btn btn-primary button-gc-primary"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer-gc py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div>
+              <p>Manzoni 1360 (Gonzales Catán)</p>
+              <p>Provincia de Buenos Aires</p>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.3526627003616!2d-58.63109122480258!3d-34.79706836773419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc4ba0a0dc2bd%3A0x9d098b39bb7a043!2sAlejandro%20de%20Manzoni%201360%2C%20B1758BQZ%20Gonz%C3%A1lez%20Cat%C3%A1n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1693058449250!5m2!1ses!2sar"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="img-fluid mb-3 rounded-4"
+              ></iframe>
+              <div class="d-flex align-items-center mb-3">
+                <img
+                  src="../assets/footer-phone-icon.svg"
+                  alt="Ícono teléfono"
+                />
+                <p class="ms-2 m-0">Tel. (54)5277-0815</p>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <img src="../assets/footer-email-icon.svg" alt="Ícono email" />
+                <p class="ms-2 m-0">info@proyectogc.org</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-7 mt-3 mt-md-0 ps-md-5">
+            <h2 class="fw-bold mb-3">Escribinos</h2>
+            <form action="">
+              <div class="mb-3">
+                <label for="name" class="form-label"
+                  >Nombre <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label"
+                  >Email <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="email@gmail.com"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label"
+                  >Mensaje <span class="text-danger">*</span></label
+                >
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                  placeholder="Dejanos tu consulta"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary button-gc-secondary">
+                Enviar
+              </button>
+            </form>
+          </div>
+          <div class="col-12 mt-5">
+            <div
+              class="d-flex justify-content-center align-items-center text-center font-monospace mb-0 footer-gc-credits"
+            >
+              <p class="me-2 mb-0 fw-bold">Hecho con</p>
+              <img src="../assets/footer-heart-icon.svg" alt="Ícono corazón" />
+              <p class="ms-2 mb-0 fw-bold">y JS por Flor Luz Duarte</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
