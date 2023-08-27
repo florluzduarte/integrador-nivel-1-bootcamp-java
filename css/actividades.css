@@ -1,0 +1,28 @@
+.actividades-gc-image {
+  width: 100%;
+  height: 18rem;
+  background-image: url("../assets/actividades-hero-img-sm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .actividades-gc-image {
+    background-image: url("../assets/actividades-hero-img-md.jpg");
+    height: 25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .actividades-gc-image {
+    background-image: url("../assets/actividades-hero-img-lg.jpg");
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .actividades-gc-image {
+    height: 35rjpg;
+  }
+}
