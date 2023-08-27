@@ -1,0 +1,28 @@
+.colaborar-gc-image {
+  width: 100%;
+  height: 18rem;
+  background-image: url("../assets/colaborar-hero-img-sm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .colaborar-gc-image {
+    background-image: url("../assets/colaborar-hero-img-md.jpg");
+    height: 25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .colaborar-gc-image {
+    background-image: url("../assets/colaborar-hero-img-lg.jpg");
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .colaborar-gc-image {
+    height: 35rem;
+  }
+}
