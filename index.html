@@ -256,7 +256,7 @@
           </div>
           <div class="col-12 col-md-7 mt-3 mt-md-0 ps-md-5">
             <h2 class="fw-bold mb-3">Escribinos</h2>
-            <form action="">
+            <form action="" id="footer-form">
               <div class="mb-3">
                 <label for="name" class="form-label"
                   >Nombre <span class="text-danger">*</span></label
@@ -266,8 +266,8 @@
                   class="form-control"
                   id="name"
                   placeholder="Tu nombre"
-                  required
                 />
+                <p></p>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label"
@@ -278,8 +278,8 @@
                   class="form-control"
                   id="email"
                   placeholder="email@gmail.com"
-                  required
                 />
+                <p></p>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label"
@@ -290,8 +290,8 @@
                   id="message"
                   rows="3"
                   placeholder="Dejanos tu consulta"
-                  required
                 ></textarea>
+                <p></p>
               </div>
               <button type="submit" class="btn btn-primary button-gc-secondary">
                 Enviar
@@ -316,5 +316,6 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="./javascript/footerFormValidations.js"></script>
   </body>
 </html>
