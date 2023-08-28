@@ -157,7 +157,11 @@
               </table>
             </div>
           </div>
-          <form action="" class="col-12 col-md-6 col-lg-6 ms-lg-5 my-lg-5">
+          <form
+            action=""
+            id="inscription-form"
+            class="col-12 col-md-6 col-lg-6 ms-lg-5 my-lg-5"
+          >
             <p>
               <strong
                 >Para comenzar con el proceso de inscripción deberán completar
@@ -175,6 +179,7 @@
                 id="parent-name"
                 required
               />
+              <p></p>
             </div>
             <div class="mb-3">
               <label for="student-name" class="form-label"
@@ -187,6 +192,7 @@
                 id="student-name"
                 required
               />
+              <p></p>
             </div>
             <div class="mb-3">
               <label for="contact-email" class="form-label"
@@ -199,6 +205,7 @@
                 placeholder="email@gmail.com"
                 required
               />
+              <p></p>
             </div>
             <div class="mb-3">
               <label for="phone" class="form-label"
@@ -211,6 +218,7 @@
                 placeholder="1122223333"
                 required
               />
+              <p></p>
             </div>
             <div class="mb-3">
               <label for="classes" class="form-label"
@@ -223,6 +231,7 @@
                 id="classes"
                 placeholder="Elige el turno seleccionado"
               />
+              <p></p>
               <datalist id="datalistOptions">
                 <option value="Mañana"></option>
                 <option value="Tarde"></option>
@@ -237,6 +246,7 @@
                 id="inscription-message"
                 rows="3"
               ></textarea>
+              <p></p>
             </div>
             <button
               class="mb-3 btn btn-primary button-gc-primary"
@@ -346,6 +356,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="../javascript/inscriptionFormValidation.js"></script>
     <script src="../javascript/footerFormValidations.js"></script>
   </body>
 </html>
