@@ -157,7 +157,11 @@
               </table>
             </div>
           </div>
-          <form action="" class="col-12 col-md-6 col-lg-6 ms-lg-5 my-lg-5">
+          <form
+            action=""
+            id="inscription-form"
+            class="col-12 col-md-6 col-lg-6 ms-lg-5 my-lg-5"
+          >
             <p>
               <strong
                 >Para comenzar con el proceso de inscripción deberán completar
@@ -175,6 +179,7 @@
                 id="parent-name"
                 required
               />
+              <p></p>
             </div>
             <div class="mb-3">
               <label for="student-name" class="form-label"
@@ -187,18 +192,20 @@
                 id="student-name"
                 required
               />
+              <p></p>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label"
+              <label for="contact-email" class="form-label"
                 >Email de contacto <span class="text-danger">*</span></label
               >
               <input
                 type="email"
                 class="form-control form-gc"
-                id="email"
+                id="contact-email"
                 placeholder="email@gmail.com"
                 required
               />
+              <p></p>
             </div>
             <div class="mb-3">
               <label for="phone" class="form-label"
@@ -211,6 +218,7 @@
                 placeholder="1122223333"
                 required
               />
+              <p></p>
             </div>
             <div class="mb-3">
               <label for="classes" class="form-label"
@@ -223,18 +231,22 @@
                 id="classes"
                 placeholder="Elige el turno seleccionado"
               />
+              <p></p>
               <datalist id="datalistOptions">
                 <option value="Mañana"></option>
                 <option value="Tarde"></option>
               </datalist>
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Mensaje</label>
+              <label for="inscription-message" class="form-label"
+                >Mensaje</label
+              >
               <textarea
                 class="form-control form-gc"
-                id="message"
+                id="inscription-message"
                 rows="3"
               ></textarea>
+              <p></p>
             </div>
             <button
               class="mb-3 btn btn-primary button-gc-primary"
@@ -281,7 +293,7 @@
           </div>
           <div class="col-12 col-md-7 mt-3 mt-md-0 ps-md-5">
             <h2 class="fw-bold mb-3">Escribinos</h2>
-            <form action="">
+            <form action="" id="footer-form">
               <div class="mb-3">
                 <label for="name" class="form-label"
                   >Nombre <span class="text-danger">*</span></label
@@ -293,6 +305,7 @@
                   placeholder="Tu nombre"
                   required
                 />
+                <p></p>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label"
@@ -305,6 +318,7 @@
                   placeholder="email@gmail.com"
                   required
                 />
+                <p></p>
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label"
@@ -317,6 +331,7 @@
                   placeholder="Dejanos tu consulta"
                   required
                 ></textarea>
+                <p></p>
               </div>
               <button type="submit" class="btn btn-primary button-gc-secondary">
                 Enviar
@@ -341,5 +356,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="../javascript/inscriptionFormValidation.js"></script>
+    <script src="../javascript/footerFormValidations.js"></script>
   </body>
 </html>
