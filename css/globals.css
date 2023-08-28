@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #71bf44;
+  --secondary-color: #0f75bc;
+  --terciary-color: #1e1e1e;
+  --footer-bkg-color: #eff0f1;
+}
+
+.button-gc-primary {
+  background-color: var(--primary-color) !important;
+  border: none !important;
+}
+
+.button-gc-secondary {
+  background-color: var(--secondary-color) !important;
+  border: none !important;
+}
+
+.button-gc-primary:hover,
+.button-gc-secondary:hover {
+  background-color: var(--terciary-color) !important;
+}
+
+.detail-gc {
+  width: 3rem;
+  height: 3rem;
+}
+
+.p-special {
+  font-size: 1.125rem !important;
+}
+
+.footer-gc {
+  background-color: var(--footer-bkg-color);
+}
+
+.footer-gc h2 {
+  color: var(--primary-color) !important;
+}
+
+.footer-gc-credits {
+  font-size: 0.875rem !important;
+}
+
+/* Animations */
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in-up {
+  animation-name: fade-in-up;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fade-in-left {
+  animation-name: fade-in-left;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/* Validations */
+
+.form-error input,
+.form-error textarea {
+  border: 1px solid red !important;
+}
+
+.form-error p {
+  color: red !important;
+}
+
+.form-checked input,
+.form-checked textarea {
+  border: 1px solid var(--primary-color) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .header-gc-wrapper {
+    max-width: 60% !important;
+  }
+
+  .p-special {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  .header-gc-wrapper {
+    max-width: 80% !important;
+  }
+
+  .detail-gc {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .p-special {
+    font-size: 1.5rem !important;
+  }
+}
